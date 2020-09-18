@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<div class="">
+  <h1>Wellcome to my World.</h1>
+  {{ password }}
+
+  <form action="{% url 'Password' %}">
+    <select name="length">
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10" selected='selected'>10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+    </select>
+
+    <br>
+    <input type="checkbox" name="Numbers">Numbers
+    <br>
+    <input type="checkbox" name="UpperCase">Uppercase
+    <br>
+    <input type="checkbox" name="Special Charecter">Special Charecter
+    <br>
+    <br>
+    <input type="submit" name="" value="Generate Password">
+  </form>
+
+  <a href="{% url 'about' %}">About</a>
+</div>
